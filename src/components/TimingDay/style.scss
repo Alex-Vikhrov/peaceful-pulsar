@@ -5,48 +5,15 @@
         justify-content: center;
         flex-direction: column;
         margin-bottom: 180px;
+    }
 
-        & h2 {
-            text-align: center;
-            margin-bottom: 200px;
-            color: #333;
-        }
-
+    &__title {
+        font-size: 55px;
+        text-align: center;
+        margin-bottom: 150px;
+        color: #333;
     }
 }
-
-// .vertical-line {
-//     width: 2px;
-//     height: 1000px;
-//     background-color: rgb(19, 19, 19);
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-between;
-//     align-items: center;
-// }
-
-// .segment {
-//     height: 250px;
-//     width: 2px;
-//     background-color: rgb(19, 19, 19);
-//     position: relative;
-// }
-
-// .dot {
-//     // width: 10px;
-//     // height: 10px;
-//     // background-color: rgb(19, 19, 19);
-//     // border-radius: 50%;
-//     // position: absolute;
-//     // top: 50%;
-//     // left: 50%;
-//     // transform: translate(-50%, -50%);
-//     width: 10px;
-//     height: 10px;
-//     background-color: black;
-//     border-radius: 50%;
-//     position: relative;
-// }
 
 .vertical-line {
     height: 1000px;
@@ -79,20 +46,11 @@
     border-radius: 50%;
     margin: 0 20px;
     z-index: 1;
-    /* Space between dot and icon/text */
 }
 
 .icon,
 .text {
     position: absolute;
-}
-
-.text {
-    & > h3 {
-        width: 132px;
-        text-transform: uppercase;
-        font-size: 15px;
-    }
 }
 
 .icon {
@@ -109,46 +67,39 @@
     }
 }
 
-// .text {
-//     width: 130px;
-//     right: -135px;
-
-//     /* Adjust this value based on text length */
-//     & time {
-//         text-align: center;
-//     }
-
-//     & h3 {
-//         font-size: 20px;
-//         text-align: center;
-//     }
-
-//     & p {
-//         font-size: 12px;
-//         text-align: center;
-//     }
-// }
-
 .text {
     width: 130px;
-    /* Adjust this value as needed */
     position: absolute;
     right: -135px;
-    /* Adjust this value as needed */
-    top: -30px;
-    // transform: translateY(-50%);
+    top: -66px;
     text-align: center;
 
-    p,
-    h3 {
+    &__time {
+        font-family: "Great Vibes", cursive;
+        font-size: 40px;
         margin: 0;
     }
 
-    h3 {
-        font-size: 20px;
+    &__subtitle {
+        width: 132px;
+        font-size: 15px;
+        font-family: "Playfair Display", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 1.4px;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0px 0px 15px 0px;
     }
 
-    p {
+    &__description {
+        font-family: "Playfair Display", sans-serif;
+        font-style: normal;
+        font-weight: 500;
         font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 14px;
+        margin: 0;
     }
 }

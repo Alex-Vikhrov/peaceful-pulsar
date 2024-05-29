@@ -5,19 +5,20 @@
     flex-direction: column;
 
     h2 {
-        font-family: "Playfair Display", sans-serif;
+        font-family: "Great Vibes", cursive;
         font-style: italic;
-        font-size: 40px;
+        font-size: 55px;
         font-weight: 400;
         color: #333;
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
 
     &__text {
         font-family: "Playfair Display", sans-serif;
         font-style: normal;
-        font-size: 1.4rem;
+        font-weight: 400;
+        font-size: 1.2rem;
         letter-spacing: 1.4px;
         text-align: center;
         margin: 20px 0px 20px 0px;
@@ -26,16 +27,16 @@
     &__subtitle {
         font-family: "Playfair Display", sans-serif;
         font-style: normal;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
+        font-weight: 400;
         letter-spacing: 1.4px;
         margin: 0px 0px 0px 0px;
-
     }
 
     h3 {
-        font-family: "Playfair Display", sans-serif;
+        font-family: "Great Vibes", cursive;
         font-style: italic;
-        font-size: 1.8rem;
+        font-size: 50px;
         font-weight: 400;
         letter-spacing: 1.4px;
         margin-top: 40px;
@@ -44,9 +45,9 @@
 
     &__place {
         font-family: "Playfair Display", sans-serif;
-        // font-style: italic;
-        font-size: 1.4rem;
-        margin: 20px 0px 20px 0px;
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin: 0px 0px 20px 0px;
         line-height: 35px;
     }
 
@@ -54,7 +55,8 @@
         width: 290px;
         font-family: "Playfair Display", sans-serif;
         font-style: normal;
-        font-size: 1.4rem;
+        font-weight: 400;
+        font-size: 1.2rem;
         text-align: center;
     }
 }
