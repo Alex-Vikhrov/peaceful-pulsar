@@ -1,6 +1,8 @@
+//@ts-nocheck
 const center = [51.533693, 46.009958];
 
 const init = () => {
+
   const map = new ymaps.Map('map', {
     center: center,
     zoom: 18,
