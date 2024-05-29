@@ -1,12 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 import Timer from '@components/Timer/Timer.astro';
 import Invitation from '@components/Invitation/Invitation.astro';
 import YandexMap from '@components/YandexMap/YandexMap.astro';
 import Divider from '@components/Divider/Divider.astro';
 import Carousel from '@components/Carousel/Carousel.astro';
 import Wishes from '@components/Wishes/Wishes.astro';
+import FormGuestes from '@components/FormGuestes/FormGuestes.astro';
+import WelcomeSignature from '@components/WelcomeSignature/WelcomeSignature.astro';
+import FotoZone from '@components/FotoZone/FotoZone.astro';
+import TimingDay from '@components/TimingDay/TimingDay.astro';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -17,7 +20,7 @@ import Wishes from '@components/Wishes/Wishes.astro';
       <p class="date">22.06.2024</p>
     </section>
     <!-- <p class="h">HELLO</p> -->
-    <Timer />
+    <!-- <Timer /> -->
   </header>
   <main>
     <section class="wrapper">
@@ -28,7 +31,15 @@ import Wishes from '@components/Wishes/Wishes.astro';
       <Divider />
       <YandexMap />
       <Divider />
+      <TimingDay />
+      <Divider />
       <Wishes />
+      <Divider />
+      <FotoZone />
+      <Divider />
+      <FormGuestes />
+      <Divider />
+      <WelcomeSignature />
       <Divider />
     </section>
   </main>
@@ -50,6 +61,13 @@ import Wishes from '@components/Wishes/Wishes.astro';
         border-color: transparent;
         //   border-style: solid;
         position: relative;
+        @media (min-width: 700px) {
+          height: 1200px;
+        }
+
+        @media (min-width: 600px) {
+          height: 1000px;
+        }
       }
 
       .header__wrapper {

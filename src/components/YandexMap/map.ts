@@ -7,22 +7,22 @@ const init = () => {
     // controls: ['routePanelControl'],
   });
 
-  // const location = ymaps.geolocation.get();
+  const location = ymaps.geolocation.get();
 
-  // location.then(function (res) {
-  //   let locationText = res.geoObjects.get(0).properties.get('text');
-  //   console.log(locationText);
-  // });
+  location.then(function (res) {
+    let locationText = res.geoObjects.get(0).properties.get('text');
+    console.log(locationText);
+  });
 
-  // let control = map.controls.get('routePanelControl');
+  let control = map.controls.get('routePanelControl');
 
-  // control.routePanel.state.set({
-  //   type: 'masstransit',
-  // });
+  control.routePanel.state.set({
+    type: 'masstransit',
+  });
 
-  // const placemark = new ymaos.Placemark(center, {}, {});
+  const placemark = new ymaos.Placemark(center, {}, {});
 
-  // map.geoObjects.add(placemark);
+  map.geoObjects.add(placemark);
 };
 
 ymaps.ready(init);
